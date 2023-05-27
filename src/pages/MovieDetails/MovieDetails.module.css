@@ -1,0 +1,103 @@
+.movieDetails {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.goBackBtn {
+  padding: 5px 15px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  background-color: #01b4e4;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.backArrow {
+  margin-right: 6px;
+}
+
+.goBackBtn:hover,
+.goBackBtn:focus {
+  background-color: rgb(196, 245, 200);
+  color: #01b4e4;
+  border: 1px solid #01b4e4;
+}
+
+.basicInfo {
+  display: flex;
+  gap: 25px;
+  margin-top: 20px;
+  padding-right: 25px;
+  border: 2px solid #01b4e4;
+  border-radius: 4px;
+}
+
+.movieInfo {
+  padding: 25px 0;
+}
+
+.name {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #0d253f;
+  font-size: 28px;
+  text-shadow: 2px 2px 2px #01b4e4;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #0d253f;
+  font-size: 17px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #01b4e4;
+  font-size: 22px;
+}
+
+.additionalInfo {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.secondaryTitle {
+  margin: 0;
+  color: #01b4e4;
+  font-size: 22px;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.link {
+  padding: 5px 15px;
+  margin-left: 15px;
+  background-color: #01b4e4;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.link:hover,
+.link:focus {
+  background-color: rgb(196, 245, 200);
+  color: #01b4e4;
+  border: 1px solid #01b4e4;
+}

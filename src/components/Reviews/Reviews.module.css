@@ -1,0 +1,35 @@
+.reviewsList {
+  list-style: none;
+  margin: 0;
+  padding: 20px 0 0 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.review {
+  padding: 5px;
+  border: 2px solid #0c2cba;
+  border-radius: 4px;
+}
+
+.author {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: #0d253f;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.content {
+  margin: 0;
+  font-size: 14px;
+}
+
+.empty {
+  margin: 20px 0;
+  color: #0f1e64;
+  font-size: 22px;
+  font-weight: 500;
+}
