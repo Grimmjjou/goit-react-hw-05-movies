@@ -14,7 +14,7 @@ const Reviews = () => {
   useEffect(() => {
     setLoading(true);
     movieAPI
-      .Reviews(movieId)
+      .reviews(movieId)
       .then(result => {
         if (result.results.length > 0) {
           setReviews(result.results);

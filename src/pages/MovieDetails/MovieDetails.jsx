@@ -16,7 +16,7 @@ const MovieDetails = () => {
   useEffect(() => {
     setLoading(true);
     movieAPI
-      .MovieDetails(movieId)
+      .movieDetails(movieId)
       .then(result => setMovie(result))
       .catch(error => toast.error(`${error.message}`))
       .finally(() => {

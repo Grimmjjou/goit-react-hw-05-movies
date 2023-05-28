@@ -40,3 +40,9 @@
   color: #0d253f;
   padding-left: 5px;
 }
+.empty {
+  margin: 20px 0;
+  color: #0f1e64;
+  font-size: 22px;
+  font-weight: 500;
+}

@@ -9,14 +9,20 @@ const Cast = () => {
   const { movieId } = useParams();
   const [cast, setCast] = useState(null);
   const [loading, setLoading] = useState(false);
-
+  const [empty, setEmpty] = useState(false);
   const BASE_IMG_URL = 'https://image.tmdb.org/t/p/w500';
 
   useEffect(() => {
     setLoading(true);
     movieAPI
       .Cast(movieId)
-      .then(result => setCast(result.cast))
+      .then(result => {
+        if (result.cast.length > 1) {
+          setCast(result.cast);
+        } else {
+          setEmpty(true);
+        }
+      })
       .catch(error => toast.error(`${error.message}`))
       .finally(() => {
         setLoading(false);
@@ -57,6 +63,9 @@ const Cast = () => {
           );
         })}
       {loading && <Loader />}
+      {empty && (
+        <p className={styles.empty}>We don't have any cast for this movies.</p>
+      )}
     </ul>
   );
 };

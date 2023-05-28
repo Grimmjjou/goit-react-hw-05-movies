@@ -23,7 +23,7 @@ async function moviesTrending() {
   }
 }
 
-async function MovieDetails(id) {
+async function movieDetails(id) {
   try {
     const fetchUrl = `${BASE_URL}${MOVIE_DETAILS}/${id}?api_key=${API_KEY}`;
     const response = await axios.get(fetchUrl);
@@ -53,7 +53,7 @@ async function Cast(id) {
   }
 }
 
-async function Reviews(id) {
+async function reviews(id) {
   try {
     const fetchUrl = `${BASE_URL}${MOVIE_DETAILS}/${id}${REVIEWS}?api_key=${API_KEY}`;
     const response = await axios.get(fetchUrl);
@@ -85,9 +85,9 @@ async function searchMovies(query) {
 
 const movieAPI = {
   moviesTrending,
-  MovieDetails,
+  movieDetails,
   Cast,
-  Reviews,
+  reviews,
   searchMovies,
 };
 
